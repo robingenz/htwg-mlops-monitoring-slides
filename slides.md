@@ -26,7 +26,7 @@ hideInToc: true
 
 # Ablauf
 
-<Toc maxDepth="2" />
+<Toc maxDepth="1" />
 
 ---
 src: ./pages/01_overview.md

@@ -1,16 +1,6 @@
 # Monitoring
 
-<br>
-
-> It is crucial to know not just that your ML system worked correctly at launch, but that it continues to work correctly over time.
-
-<!-- 
-Quelle: https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/aad9f93b86b7addfea4c419b9100c6cdd26cacea.pdf
-
-**Deutsch**: Es ist von entscheidender Bedeutung, dass Ihr ML-System nicht nur beim Start korrekt funktioniert, sondern auch im Laufe der Zeit weiterhin korrekt funktioniert.
--->
-
-<br>
+<!-- Frage 2: **Was bedeutet es eigentlich Modelle zu monitoren?** -->
 
 - Erstellen und Überwachen von Metriken
     - Metriken über die Trainingsdaten (**Data Monitoring**)
@@ -39,4 +29,28 @@ https://martinfowler.com/articles/cd4ml.html#ModelMonitoringAndObservability
 
 ---
 
+## Unstrukturierte Daten
+
+### Beispiel: Computer Vision
+
+<!-- https://www.arthur.ai/blog/data-drift-detection-part-ii-unstructured-data-in-nlp-and-cv -->
+
+### Beispiel: NLP
+
+<!-- https://www.arthur.ai/blog/data-drift-detection-part-ii-unstructured-data-in-nlp-and-cv -->
+
+---
+
 ## Best Practices
+
+---
+
+## Systemanforderungen
+
+<a href="https://christophergs.com/machine%20learning/2020/03/14/how-to-monitor-machine-learning-models/" target="_blank">
+    <img src="/images/monitoring-system.png" class="mt-4 h-9/10 rounded shadow" />
+</a>
+
+<!-- 
+Die 3 Schlüsselkomponenten.
+-->
