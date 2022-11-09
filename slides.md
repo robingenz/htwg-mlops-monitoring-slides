@@ -20,8 +20,6 @@ hideInToc: true
 
 Machine Learning Development and Operations
 
-<Footer />
-
 ---
 hideInToc: true
 ---
@@ -29,8 +27,6 @@ hideInToc: true
 # Ablauf
 
 <Toc maxDepth="2" />
-
-<Footer />
 
 ---
 src: ./pages/01_overview.md

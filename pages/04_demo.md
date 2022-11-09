@@ -5,4 +5,4 @@ class: 'text-center'
 
 # Demo
 
-<Footer />
+<!-- TODO: Code-Beispiele (oder iFrame) einbetten -->
