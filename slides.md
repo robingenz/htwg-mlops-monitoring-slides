@@ -7,7 +7,10 @@ highlighter: shiki
 lineNumbers: true
 info: false
 drawings:
+  enabled: true
   persist: false
+  presenterOnly: false
+  syncAll: true
 css: windicss
 fonts:
   sans: 'Roboto'
@@ -24,7 +27,7 @@ Machine Learning Development and Operations
 hideInToc: true
 ---
 
-# Ablauf
+# Inhalte
 
 <Toc maxDepth="1" />
 
@@ -33,13 +36,17 @@ src: ./pages/01_overview.md
 ---
 
 ---
-src: ./pages/02_basics.md
+src: ./pages/02_ai-regulation.md
 ---
 
 ---
-src: ./pages/03_provider-comparison.md
+src: ./pages/03_basics.md
 ---
 
 ---
-src: ./pages/04_demo.md
+src: ./pages/04_provider-comparison.md
+---
+
+---
+src: ./pages/05_demo.md
 ---

@@ -1,3 +1,13 @@
+---
+layout: 'cover'
+class: 'text-center'
+hideInToc: True
+---
+
+# Machine Learning Lifecycle
+
+---
+
 # Machine Learning Lifecycle
 
 <!-- TODO: Jeden Schritt markieren und auf mehrere Folien aufteilen, Themen der anderen hervorheben -->
@@ -15,7 +25,7 @@ Darstellung der 3 Dimensionen `code`, `model` und `data`.
 
 **6. Schritt**: Ergebnisse und Performance des Models mit Produktionsdaten überwachen.
 
----
+>>>>>
 
 Frage 1: **Wofür benötigen wir Monitoring überhaupt?**
 
@@ -28,7 +38,7 @@ Beispiele:
 
 -> Wir müssen Fehlverhalten des Modells in der Produktivumgebung nachvollziehen können.
 
----
+>>>>>
 
 **Wichtig**: Das Trainieren eines Models ist kein einmaliger sondern ein **kontnuierlicher Prozess**.
 Monitoring ist der letzte Schritt **einer** Iteration und liefert Daten auf deren Grundlage dann wieder neue Models erstellt werden.
