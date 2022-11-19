@@ -19,6 +19,40 @@ fonts:
 hideInToc: true
 ---
 
+<style>
+  /* h1 {
+    font-size: 2.25rem;
+  }
+  
+  h2 {
+    font-size: 1.875rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  h6 {
+    font-size: 0.875rem;
+  }
+
+  p, li {
+    font-size: 1.1rem;
+  } */
+  
+  th {
+    font-weight: 600 !important;
+  }
+</style>
+
 # Monitoring
 
 Machine Learning Development and Operations

@@ -8,7 +8,7 @@ hideInToc: True
 
 ---
 
-# Monitoring
+## Monitoring
 
 <!-- Frage 2: **Was bedeutet es eigentlich Modelle zu monitoren?** -->
 
@@ -58,6 +58,48 @@ https://martinfowler.com/articles/cd4ml.html#ModelMonitoringAndObservability
 1. Abweichungsmetriken (z. B. Wasserstein-Metrik)
 1. Leistungsmetriken (z. B. MSE, ROC, F1 Score)
 -->
+
+---
+
+### Verteilungsmetriken
+
+<table>
+    <tr>
+        <th>Metrik</th>
+        <th>Kategorisch</th>
+        <th>Numerisch</th>
+        <th>Boolean</th>
+    </tr>
+    <tr>
+        <td>Anzahl einzigartiger Werte</td>
+        <td>x</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Durchschnittswert</td>
+        <td></td>
+        <td>x</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Standardabweichung</td>
+        <td></td>
+        <td>x</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Verhältnis</td>
+        <td></td>
+        <td></td>
+        <td>x</td>
+    </tr>
+</table>
+
+<br>
+
+**Beispiele**:
+- <u>Durchschnittswert</u> berechnen: $\bar{x}=\frac{1}{n}\sum_{i=1}^n x_i$
 
 ---
 
