@@ -50,13 +50,6 @@ https://martinfowler.com/articles/cd4ml.html#ModelMonitoringAndObservability
 
 **Beispiel**: F1-Score
 -> Maß für die Genauigkeit eines Modells, um binäre Klassifizierungssysteme zu bewerten
-
-**Frage**: Welche Metriken gibt es?
-1. Verteilungsmetriken (z. B. Durchschnittswert, Standardabweichung)
-1. Integritätsmetriken (z. B. % an fehlenden Werten, % an Ausreißern)
-1. Aktivitätsmetriken (z. B. Anzahl an Vorhersagen)
-1. Abweichungsmetriken (z. B. Wasserstein-Metrik)
-1. Leistungsmetriken (z. B. MSE, ROC, F1 Score)
 -->
 
 ---
@@ -83,12 +76,6 @@ https://martinfowler.com/articles/cd4ml.html#ModelMonitoringAndObservability
         <td></td>
     </tr>
     <tr>
-        <td>Standardabweichung</td>
-        <td></td>
-        <td>x</td>
-        <td></td>
-    </tr>
-    <tr>
         <td>Verhältnis</td>
         <td></td>
         <td></td>
@@ -103,15 +90,149 @@ https://martinfowler.com/articles/cd4ml.html#ModelMonitoringAndObservability
 
 ---
 
+### Integritätsmetriken
+
+<table>
+    <tr>
+        <th>Metrik</th>
+        <th>Kategorisch</th>
+        <th>Numerisch</th>
+        <th>Boolean</th>
+    </tr>
+    <tr>
+        <td>% an fehlenden Werten</td>
+        <td>x</td>
+        <td>x</td>
+        <td>x</td>
+    </tr>
+    <tr>
+        <td>% an Ausreißern</td>
+        <td></td>
+        <td>x</td>
+        <td></td>
+    </tr>
+</table>
+
+<br>
+
+**Beispiele**:
+- <u>% an fehlenden Werten</u> berechnen: 
+    - $IQR=Q3-Q1$
+    - $g_o=Q3+1,5*IQR$
+    - $g_u=Q1+1,5*IQR$
+
+---
+
+### Aktivitätsmetriken
+
+<table>
+    <tr>
+        <th>Metrik</th>
+        <th>Kategorisch</th>
+        <th>Numerisch</th>
+        <th>Boolean</th>
+    </tr>
+    <tr>
+        <td>Anzahl an Vorhersagen</td>
+        <td>x</td>
+        <td>x</td>
+        <td>x</td>
+    </tr>
+</table>
+
+---
+
+### Abweichungsmetriken
+
+<table>
+    <tr>
+        <th>Metrik</th>
+        <th>Kategorisch</th>
+        <th>Numerisch</th>
+        <th>Boolean</th>
+    </tr>
+    <tr>
+        <td>Chi-Quadrat-Test</td>
+        <td>x</td>
+        <td></td>
+        <td>x</td>
+    </tr>
+    <tr>
+        <td>Wasserstein-Metrik</td>
+        <td></td>
+        <td>x</td>
+        <td></td>
+    </tr>
+</table>
+
+<br>
+
+**Beispiele**:
+- <u>Chi-Quadrat-Test</u> berechnen: $dist(P,Q)=\frac{1}{2}\sum_i\frac{(P(i)-Q(i))^2}{P(i)+Q(i)}$
+
+<!-- 
+P = Feature-Werte von Datum 1
+Q = Feature-Werte von Datum 2
+ -->
+ 
+---
+
+### Leistungsmetriken
+
+<table>
+    <tr>
+        <th>Metrik</th>
+        <th>Kategorisch</th>
+        <th>Numerisch</th>
+        <th>Boolean</th>
+    </tr>
+    <tr>
+        <td>F1 Score</td>
+        <td>x</td>
+        <td></td>
+        <td>x</td>
+    </tr>
+    <tr>
+        <td>MSE</td>
+        <td></td>
+        <td>x</td>
+        <td></td>
+    </tr>
+</table>
+
+<br>
+
+**Beispiele**:
+- <u>MSE</u> berechnen: $l=\frac{1}{n}*\displaystyle\sum_{i=1}^{n} (\hat{y_i} - y_i)^2$
+
+<!-- 
+**F1-Score**: Kombiniert Genauigkeit und Trefferquote.
+
+**MSE**: Mittlere quadratische Abweichung
+->  Gibt an wie sehr ein Punktschätzer um den zu schätzenden Wert streut
+-->
+
+---
+
 ## Unstrukturierte Daten
 
-### Beispiel: Computer Vision
-
 <!-- https://www.arthur.ai/blog/data-drift-detection-part-ii-unstructured-data-in-nlp-and-cv -->
 
-### Beispiel: NLP
+- **Problem**: Verwendung der üblichen Metriken auf Rohdaten nicht möglich
+- Viele verschiedene Ansätze
+- 3 Hauptaspekte:
+    1. **Vektorielle Repräsentation**: Konvertierung der unstrukturierten Daten in eine Vektoreinbettung
+    2. **Dichtemodell**: Definition eines Dichtemodell für den Referenzdatensatz
+    3. **Scoring**: Scoring neuer Datenpunkte anhand des Referenz-Dichtmodells
 
-<!-- https://www.arthur.ai/blog/data-drift-detection-part-ii-unstructured-data-in-nlp-and-cv -->
+<!-- 
+**Vektorielle Repräsentation**:
+    - Umwandlung unstrukturierter Daten in eine aussagekräftige Vektordarstellung mittels Merkmalsextraktion (siehe **PCA**)
+**Dichtemodell**: 
+    - Erstellung eines Dichtemodells, das die zugrunde liegende Verteilung modellieren kann
+**Scoring**: 
+    - 
+-->
 
 ---
 
