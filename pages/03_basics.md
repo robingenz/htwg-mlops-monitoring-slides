@@ -12,9 +12,9 @@ class: 'text-center'
 <!-- Frage 2: **Was bedeutet es eigentlich Modelle zu monitoren?** -->
 
 - Erstellen und Überwachen von Metriken
-    - Metriken über die Trainingsdaten (**Data Monitoring**)
-    - Metriken über die Vorhersagen (**Prediction Monitoring**)
-    - Metriken über die System-Performance (**System Monitoring**)
+    - Metriken über die Eingabedaten (**Data Monitoring**)
+    - Metriken über die Ausgabedaten (**Prediction Monitoring**)
+    - <span class="opacity-60">Metriken über die System-Performance (**System Monitoring**)</span>
 
 <!-- 
 **Data Monitoring**: Eingabedaten (z. B. Nutzerverhalten) überwachen, um außergewöhnliche Änderungen frühzeitig festzustellen
@@ -36,11 +36,19 @@ https://martinfowler.com/articles/cd4ml.html#ModelMonitoringAndObservability
 
 - Quantitative Messwerte
 - Verschiedene Arten von Metriken
-    1. Verteilungsmetriken (**Distribution**)
-    2. Integritätsmetriken (**Integrity**)
-    3. Aktivitätsmetriken (**Activity**)
-    4. Abweichungsmetriken (**Drift**)
-    5. Leistungsmetriken (**Performance**)
+    1. Verteilungsmetriken (**Distribution**) <div class="inline-block h-3 w-3 rounded-full bg-sky-800"></div> <div class="inline-block h-3 w-3 rounded-full bg-red-700"></div>
+    2. Integritätsmetriken (**Integrity**) <div class="inline-block h-3 w-3 rounded-full bg-sky-800"></div>
+    3. Aktivitätsmetriken (**Activity**) 
+    4. Abweichungsmetriken (**Drift**) <div class="inline-block h-3 w-3 rounded-full bg-sky-800"></div> <div class="inline-block h-3 w-3 rounded-full bg-red-700"></div>
+    5. Leistungsmetriken (**Performance**) <div class="inline-block h-3 w-3 rounded-full bg-red-700"></div>
+
+<br>
+<hr>
+<br>
+
+<div class="inline-block h-3 w-3 rounded-full bg-sky-800"></div> Data Monitoring<br><br>
+<div class="inline-block h-3 w-3 rounded-full bg-red-700"></div> Prediction Monitoring<br><br>
+<!-- <div class="inline-block h-3 w-3 rounded-full border-solid border-2 border-black"></div>  -->
 
 <!-- TODO: Wie werden diese Berechnet? -> KaTeX benutzen -->
 
@@ -227,6 +235,8 @@ Q = Feature-Werte von Datum 2
 <!-- 
 **Vektorielle Repräsentation**:
     - Umwandlung unstrukturierter Daten in eine aussagekräftige Vektordarstellung mittels Merkmalsextraktion (siehe **PCA**)
+    - Beispiele für Vektoren bei Bildern (CV): Lichteinfall, Ausleuchtung des Hintergrunds
+    - Beispiele für Vektoren bei Texten (NLP): 
 **Dichtemodell**: 
     - Erstellung eines Dichtemodells, das die zugrunde liegende Verteilung modellieren kann
 **Scoring**: 

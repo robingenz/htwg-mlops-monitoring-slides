@@ -27,9 +27,30 @@ https://neptune.ai/blog/ml-model-monitoring-best-tools
 
 ## Datenschutz
 
-- Alle Anbieter Sitz in USA
+- Anbieter haben Sitz in USA
 
 <br>
+
+### DSGVO
+
+**Artikel 17**:
+> Die betroffene Person hat das Recht, von dem Verantwortlichen zu verlangen, dass sie betreffende personenbezogene Daten unverzüglich gelöscht werden [...]
+
+**Artikel 28**:
+> Erfolgt eine Verarbeitung im Auftrag eines Verantwortlichen, so arbeitet dieser nur mit Auftragsverarbeitern, die hinreichend Garantien dafür bieten, [...] dass die Verarbeitung im Einklang mit den Anforderungen dieser Verordnung erfolgt [...]
+
+→ Gemäß dem Patriot Act von 2001 müssen US-Unternehmen personenbezogene Daten auf Verlangen von US-Behörden herausgeben.
+
+<!-- 
+**Artikel 17**: Recht auf Löschung
+**Artikel 28**: Auftragsverarbeiter
+
+Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen.
+-->
+
+---
+
+## Datenschutz
 
 ### Beispiel: WhyLabs
 
