@@ -1,7 +1,6 @@
 ---
 layout: 'cover'
 class: 'text-center'
-hideInToc: True
 ---
 
 # Monitoring
