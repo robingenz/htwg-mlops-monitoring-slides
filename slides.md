@@ -20,36 +20,42 @@ hideInToc: true
 ---
 
 <style>
-  /* h1 {
-    font-size: 2.25rem;
-  }
-  
-  h2 {
-    font-size: 1.875rem;
-  }
+  body {
+    .slidev-layout {
+      h1 {
+        font-size: 2.25rem;
+      }
+      
+      h2 {
+        font-size: 1.875rem;
+        margin-bottom: 1rem;
+      }
 
-  h3 {
-    font-size: 1.5rem;
-  }
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+      }
 
-  h4 {
-    font-size: 1.25rem;
-  }
+      h4 {
+        font-size: 1.25rem;
+      }
 
-  h5 {
-    font-size: 1rem;
-  }
+      h5 {
+        font-size: 1rem;
+      }
 
-  h6 {
-    font-size: 0.875rem;
-  }
+      h6 {
+        font-size: 0.875rem;
+      }
 
-  p, li {
-    font-size: 1.1rem;
-  } */
-  
-  th {
-    font-weight: 600 !important;
+      p, li {
+        font-size: 1.1rem;
+      }
+      
+      th {
+        font-weight: 600;
+      }
+    }
   }
 </style>
 
