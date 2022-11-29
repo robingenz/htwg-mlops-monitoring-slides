@@ -39,7 +39,7 @@ https://neptune.ai/blog/ml-model-monitoring-best-tools
 **Artikel 28**:
 > Erfolgt eine Verarbeitung im Auftrag eines Verantwortlichen, so arbeitet dieser nur mit Auftragsverarbeitern, die hinreichend Garantien dafür bieten, [...] dass die Verarbeitung im Einklang mit den Anforderungen dieser Verordnung erfolgt [...]
 
-→ Gemäß dem Patriot Act von 2001 müssen US-Unternehmen personenbezogene Daten auf Verlangen von US-Behörden herausgeben.
+→ Gemäß dem <u>Patriot Act</u> von 2001 müssen US-Unternehmen personenbezogene Daten auf Verlangen von US-Behörden herausgeben.
 
 <!-- 
 **Artikel 17**: Recht auf Löschung
