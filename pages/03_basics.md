@@ -220,6 +220,8 @@ Q = Feature-Werte von Datum 2
 -->
 
 ---
+layout: two-cols
+---
 
 ## Unstrukturierte Daten
 
@@ -242,6 +244,18 @@ Q = Feature-Werte von Datum 2
 **Scoring**: 
     - 
 -->
+
+::right::
+
+<img src="/images/pca_iris.png" class="mt-4 h-6/10 rounded shadow float-right" />
+
+--- 
+
+<img src="/images/pca_eigenfaces.png" class="mt-4 h-8/10 rounded shadow" />
+
+---
+
+<img src="/images/pca_imdb.png" class="mt-4 h-8/10 rounded shadow" />
 
 ---
 
